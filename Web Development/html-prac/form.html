@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<center>
+	<form action="add server.php" method="GET" autocomplete="OFF" enctype="multipart/form-data"> 
+		<!-- Add attributes such as server and methods.
+		GET & POST:
+		email and password goes through URL whereas they go hidden via POST. 
+		autocompltet:
+		If autocomplete is off, then it won't give you suggestions. By default it is on.
+		enctype:
+		To upload file. utf-8 is default. 
+		-->
+		<label>Email</label><br>
+		<input type="email" name="email"><br> <!--name="email" so that ther server should that this input has come from email. There could be many inputs in a form. You can remain it empty as well.-->
+		<label>Password</label><br>
+		<input type="password" name="password"><br>
+		<input type="submit" name="" value="Login">
+	</form>
+	</center>
+</body>
+</html>

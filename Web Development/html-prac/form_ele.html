@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Elements</title>
+</head>
+<body>
+	<!--
+		1. label
+		2. input
+		3. text
+		4. select
+		5. datalist
+		6. fieldset and legend
+	-->
+	<form>
+		<label>Bio</label><br>
+		<textarea rows="20" cols="20"></textarea><br>
+
+		<!--dropdown-->
+		<label>Year</label>
+		<select> <!--change size and see-->
+			
+			<optgroup>
+				<option>First Year</option>
+				<option>Second Year</option>	
+			</optgroup>
+			
+			<optgroup>
+				<option>Third Year</option>
+				<option>Fourth Year</option>
+				<option>Fifth Year</option>	
+			</optgroup>
+			
+		</select>
+		<label>Smartphone</label>
+		<input list="phone" name="">
+		<datalist id="phone">
+			<option value="Redmi Note 9">Redmi Note 9</option>	
+			<option value="iphone 11">iphone 11</option>
+			<option value="Samsung">Samsung</option>
+		</datalist>
+
+		<fieldset>
+			<legend>Eductaion info</legend><br>
+			<label>12th Marks</label><br>
+			<input type="12th marks" name=""><br>
+			<label>10th Marks</label><br>
+			<input type="10th marks" name=""><br>
+		</fieldset>
+	</form>
+</body>
+</html>
